@@ -59,7 +59,46 @@ string doubleMetaphone (string word) {
             i++;
         }
         // ho
-        
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == R) {
+            done.push_back(ha+hoshonto+R);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ra) {
+            done.push_back(ha+hoshonto+ra);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == na) {
+            done.push_back(ha+hoshonto+na);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == nna) {
+            done.push_back(ha+hoshonto+nna);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ma) {
+            done.push_back(ha+hoshonto+ma);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ya) {
+            done.push_back(ha+hoshonto+ya);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == la) {
+             done.push_back(ha+hoshonto+la);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ha && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ba) {
+            done.push_back(ha+hoshonto+ba);
+             i++;
+             i++;
+        }
         // bishorgo
         
         else {
