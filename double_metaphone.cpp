@@ -18,11 +18,50 @@ string doubleMetaphone (string word) {
         tmp.clear();
     }
     for (int i=0; i<chars.size(); i++) {
+        // kkhiyo
         if (chars[i] == ko && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == sho) {
              done.push_back(ko+hoshonto+sho);
              i++;
              i++;
         }
+        // nio
+        
+        // bo fola
+        else if (chars[i] == ba && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ba) {
+            done.push_back(ba+hoshonto+ba);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ma && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ba) {
+            done.push_back(ma+hoshonto+ba);
+             i++;
+             i++;
+        }
+        else if (chars[i] == ga && i < chars.size() - 2 && chars[i+1] == hoshonto && chars[i+2] == ba) {
+            done.push_back(ga+hoshonto+ba);
+             i++;
+             i++;
+        }
+        else if (chars[i] == U && i < chars.size() - 3 && chars[i+1] == D && chars[i+2] == hoshonto && chars[i+3] == ba) {
+            done.push_back(U+D+hoshonto+ba);
+             i++;
+             i++;
+             i++;
+        }
+        else if (chars[i] == hoshonto && i < chars.size() - 1 && chars[i+1] == ba && i > 1 && chars[i-2] != hoshonto) {
+            done.push_back(ba+ba);
+            i++;
+        }
+        // mo fola        
+        
+        else if (chars[i] == hoshonto && i < chars.size() - 1 && chars[i+1] == ma && i > 1 && chars[i-2] != hoshonto) {
+            done.push_back(ba+ba);
+            i++;
+        }
+        // ho
+        
+        // bishorgo
+        
         else {
             done.push_back(chars[i]);
         }
