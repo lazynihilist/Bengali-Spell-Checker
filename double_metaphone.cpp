@@ -106,6 +106,123 @@ string doubleMetaphone (string word) {
             }
             else done.push_back(ba+ba);
         }
+        //nya
+		//41
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ca){
+			done.push_back(nya+hoshonto+ca);
+			i+=2;
+		}
+
+		//42
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==cha){
+			done.push_back(nya+hoshonto+cha);
+			i+=2;
+		}
+
+
+		//43
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ja){
+			done.push_back(nya+hoshonto+ja);
+			i+=2;
+		}
+
+
+		//44
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==jha){
+			done.push_back(nya+hoshonto+jha);
+			i+=2;
+		}
+
+		//45
+		else if(chars[i]==ca && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ca+hoshonto+nya);
+			i+=2;
+		}
+
+		//47
+		else if(i==0 && chars[i]==ja && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ja+hoshonto+nya);
+			i+=2;
+		}
+
+		//48
+		else if(i!=0 && chars[i]==ja && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ja+hoshonto+nya);
+			i+=2;
+		}
+
+		//49
+		else if(chars[i]==nya && i < chars.size() - 1 && chars[i+1]==hoshonto){
+			done.push_back(nya+hoshonto);
+			i++;
+		}
+        //ma fola
+		//80
+		else if(chars[i]==ka && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(ka+hoshonto+ma);
+			i+=2;
+		}
+
+		//81 
+		else if(chars[i]==ga && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(ga+hoshonto+ma);
+			i+=2;
+		}
+
+		//82 
+		else if(chars[i]==nga && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(nga+hoshonto+ma);
+			i+=2;
+		}
+
+		//83 
+		else if(chars[i]==tta && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(tta+hoshonto+ma);
+			i+=2;
+		}
+
+		//84 
+		else if(chars[i]==nna && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(nna+hoshonto+ma);
+			i+=2;
+		}
+
+		//85 
+		else if(chars[i]==na && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(na+hoshonto+ma);
+			i+=2;
+		}
+
+		//86 
+		else if(chars[i]==ma && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(ma+hoshonto+ma);
+			i+=2;
+		}
+
+		//87 
+		else if(chars[i]==la && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(la+hoshonto+ma);
+			i+=2;
+		}
+
+		//88 
+		else if(i!=0 && chars[i]==sha && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(sha+hoshonto+ma);
+			i+=2;
+		}
+
+		//89 
+		else if(i!=0 && chars[i]==ssa && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(ssa+hoshonto+ma);
+			i+=2;
+		}
+
+		//90 
+		else if(i!=0 && chars[i]==sa && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ma){
+			done.push_back(sa+hoshonto+ma);
+			i+=2;
+		}
+
         // else
         else {
             done.push_back(chars[i]);
