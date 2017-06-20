@@ -23,6 +23,55 @@ string doubleMetaphone (string word) {
              i++;
              i++;
         }
+        //41
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ca){
+			done.push_back(nya+hoshonto+ca);
+			i+=2;
+		}
+
+		//42
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==cha){
+			done.push_back(nya+hoshonto+cha);
+			i+=2;
+		}
+
+
+		//43
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==ja){
+			done.push_back(nya+hoshonto+ja);
+			i+=2;
+		}
+
+
+		//44
+		else if(chars[i]==nya && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==jha){
+			done.push_back(nya+hoshonto+jha);
+			i+=2;
+		}
+
+		//45
+		else if(chars[i]==ca && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ca+hoshonto+nya);
+			i+=2;
+		}
+
+		//47
+		else if(i==0 && chars[i]==ja && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ja+hoshonto+nya);
+			i+=2;
+		}
+
+		//48
+		else if(i!=0 && chars[i]==ja && i < chars.size() - 2 && chars[i+1]==hoshonto && chars[i+2]==nya){
+			done.push_back(ja+hoshonto+nya);
+			i+=2;
+		}
+
+		//49
+		else if(chars[i]==nya && i < chars.size() - 1 && chars[i+1]==hoshonto){
+			done.push_back(nya+hoshonto);
+			i+=2;
+		}
         else {
             done.push_back(chars[i]);
         }
