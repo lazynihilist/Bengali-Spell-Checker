@@ -100,7 +100,13 @@ string doubleMetaphone (string word) {
              i++;
         }
         // bishorgo
-        
+        else if (chars[i] == visharga) {
+            if (i == chars.size() - 1) {
+                if (chars.size() <= 2) done.push_back(visharga);
+            }
+            else done.push_back(ba+ba);
+        }
+        // else
         else {
             done.push_back(chars[i]);
         }
